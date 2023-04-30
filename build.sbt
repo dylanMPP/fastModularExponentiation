@@ -1,8 +1,5 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+scalaVersion := "3.0.0"
 
-ThisBuild / scalaVersion := "2.13.10"
+scalacOptions ++= Seq("-language:implicitConversions", "-deprecation")
 
-lazy val root = (project in file("."))
-  .settings(
-    name := "fastModularExponentiation"
-  )
+libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test

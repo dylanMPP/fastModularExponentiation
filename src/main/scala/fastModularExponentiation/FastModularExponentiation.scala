@@ -1,7 +1,9 @@
+package fastModularExponentiation
+
 import java.util.Scanner
 import scala.annotation.tailrec
 
-object fastModularExponentiation {
+object FastModularExponentiation {
   val scanner = new java.util.Scanner(System.in)
 
   def main(args: Array[String]): Unit = {
@@ -45,9 +47,13 @@ object fastModularExponentiation {
         case 0 => List(0)
         case 1 => List(1)
         case _ =>
-          val quotient = decimal / 2
-          val reminder = decimal % 2
-          decimalToBinary(quotient) ::: List(reminder)
+          if(decimal < 0){
+            List()
+          } else {
+            val quotient = decimal / 2
+            val mod = decimal % 2
+            decimalToBinary(quotient) ::: List(mod)
+          }
       }
 
   def pred(n: Int): Int =
