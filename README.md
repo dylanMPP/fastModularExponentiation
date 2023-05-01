@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/vwc6BxAh)
+# **Fast Modular Exponentiation - Seguimiento 12**
+
+### Dylan Bermudez Cardona - Luis Charria Meneses
+
+This project aims to implement the Fast Modular Exponentiation algorithm in Scala to efficiently calculate bn mod m using functional programming.
