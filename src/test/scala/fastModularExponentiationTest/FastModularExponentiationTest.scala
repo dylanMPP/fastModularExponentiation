@@ -35,6 +35,23 @@ class FastModularExponentiationTest extends munit.FunSuite {
     assert(FastModularExponentiation.fastModularExponentiation(example2Number3, example2Exp, example2Mod) == 1211)
   }
 
+  val bookExample1Number: Int = 81
+  val bookExample2Number: Int = 66
+  val bookExample3Number: Int = 486
+  val bookExample4Number: Int =396
+
+  val bookExampleExp: Int = 2
+  val bookExampleMod: Int = 645
+
+  test("Fast Modular Exponentiation (Examples from Rosen's book):") {
+    assert(FastModularExponentiation.fastModularExponentiation(bookExample1Number, bookExampleExp, bookExampleMod) == 111)
+    assert(FastModularExponentiation.fastModularExponentiation(bookExample2Number, bookExampleExp, bookExampleMod) == 486)
+    assert(FastModularExponentiation.fastModularExponentiation(bookExample3Number, bookExampleExp, bookExampleMod) == 126)
+    assert(FastModularExponentiation.fastModularExponentiation(bookExample4Number, bookExampleExp, bookExampleMod) == 81)
+    //Example Main Exercise
+    assert(FastModularExponentiation.fastModularExponentiation(3, 644, bookExampleMod) == 36)
+  }
+
   val number: Int = 2
   val number2: Int = 0
   val number3: Int = 27
